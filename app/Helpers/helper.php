@@ -17,3 +17,12 @@ if (!function_exists('include_asset')) {
 		  }
 	 }
 }
+
+if (!function_exists('partial_asset')) {
+	 function partial_asset ($partial = '')
+	 {
+		  if (!empty($partial)) {
+			   require_once __DIR__ . "/../../resources/views/{$partial}.php";
+		  }
+	 }
+}
