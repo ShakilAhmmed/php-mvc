@@ -1,0 +1,22 @@
+{
+    "name": "shakil/phpmvc",
+    "description": "Mvc Integrate",
+    "authors": [
+        {
+            "name": "ShakilAhmmed",
+            "email": "shakilfci461@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.0",
+        "phroute/phroute": "^2.1"
+    },
+    "autoload": {
+        "files": [
+            "app/Helpers/helper.php"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
