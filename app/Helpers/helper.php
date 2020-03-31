@@ -26,3 +26,15 @@ if (!function_exists('partial_asset')) {
 		  }
 	 }
 }
+
+if (!function_exists('dd')) {
+	 function dd ($data = [])
+	 {
+		  if (!empty($data)) {
+			   echo "<pre>";
+			   print_r($data);
+			   echo "</pre>";
+		  }
+		  die();
+	 }
+}
