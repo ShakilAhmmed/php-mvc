@@ -6,6 +6,7 @@ use \Phroute\Phroute\RouteParser;
 use Phroute\Phroute\Dispatcher;
 use \Phroute\Phroute\Exception\HttpRouteNotFoundException;
 use \Phroute\Phroute\Exception\HttpMethodNotAllowedException;
+use Illuminate\Database\Capsule\Manager as DB;
 
 require_once __DIR__ . '/config/database.php';
 $router = new RouteCollector(new RouteParser());
